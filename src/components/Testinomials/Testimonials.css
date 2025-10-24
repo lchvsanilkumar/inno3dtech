@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonials {
+  padding: 60px 0;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: #ffffff;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00DDEE;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col {
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.testimonial {
+  background: #191919;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  color: #FFC107;
+  font-size: 12px; /* Adjust as needed */
+  margin-bottom: 10px;
+  order: -1; /* Ensure stars are at the top */
+}
+
+.star-icon {
+  margin: 0 1px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 0;
+  display: block;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00DDEE;
+}
+
+@media screen and (max-width: 960px) {
+  .col {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
